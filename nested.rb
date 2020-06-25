@@ -84,12 +84,14 @@ def adding_matz
           :languages => ["C"]
         }
      }
-programmer_hash.unshift([:yukihiro_matsumoto] = {
+new_hash = {
+  :yukihiro_matsumoto = {
    :known_for => "Ruby",
     :languages => ["LISP", "C"]
- })
+ }
+}.merge(programmer_hash)
     
-  programmer_hash
+  new_hash
 end
 
 def changing_alan
